@@ -7,7 +7,7 @@ function Body() {
       <div className="resume-wrapper">
         <div className="header">
           <div className="user">
-            <span className="designation">ui developer</span>
+            <span className="designation">ui developers</span>
             <h1 className="user-name">mathew sunny</h1>
             <p className="about-paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
