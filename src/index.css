@@ -1,13 +1,173 @@
-body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #212121;
+}
+
+/* utility classes */
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.resume-wrapper {
+  background-color: #1e1e1e;
+  /* color: #03dac5; */
+  color: #fff;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 3rem;
+  margin-top: 2rem;
+  border-radius: 0.3rem;
+}
+
+/* header styles */
+.header {
+  display: flex;
+  gap: 3rem;
+}
+
+.designation {
+  background-color: #f8b400;
+  color: #1e1e1e;
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: 600;
+}
+
+.user-name {
+  font-weight: lighter;
+  font-size: 4rem;
+  margin-top: 0.5rem;
+}
+
+.designation {
+  display: inline;
+  font-size: 1rem;
+}
+
+.contact-links a {
+  color: #212121;
+  text-decoration: none;
+  padding-right: 1rem;
+  background-color: #f8b400;
+  padding: 0.5rem;
+  border-radius: 2px;
+  margin-right: 0.5rem;
+}
+
+.user-image {
+  height: 15rem;
+  width: 15rem;
+  aspect-ratio: 1/1;
+  margin: auto;
+}
+
+.user-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+}
+
+.about-paragraph {
+  margin: 2rem 0;
+  font-weight: lighter;
+}
+
+/* details styles */
+.details {
+  margin-top: 2rem;
+}
+
+.card-wrapper {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card-wrapper .card {
+  background-color: #212121;
+  padding: 2rem;
+  border-left: 4px solid #03dac5;
+}
+
+.card-wrapper .card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-header {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+
+.card-body .year {
+  min-width: 6rem;
+}
+
+.education {
+  display: grid;
+  gap: 1rem;
+}
+
+.margin-top {
+  margin-top: 1rem;
+}
+
+.card-body .title {
+  text-transform: capitalize;
+  color: #f8b400;
+  margin-bottom: 0.5rem;
+}
+
+/* skills */
+.skill-wrapper {
+  padding: 2rem;
+  background-color: #212121;
+  margin-top: 2rem;
+}
+
+.skills,
+.lang {
+  flex: 1;
+  display: grid;
+  gap: 1.5rem;
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+}
+
+.grp {
+  display: grid;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.grp label {
+  font-weight: 100;
+  text-transform: capitalize;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  width: 100%;
+}
+
+::-webkit-progress-value {
+  border-radius: 12px;
+  background-color: #03dac5;
+}
+
+::-webkit-progress-bar {
+  background-color: #03dac554;
+  border-radius: 12px;
 }
